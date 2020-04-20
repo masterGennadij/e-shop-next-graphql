@@ -1,0 +1,4 @@
+{
+  "extends": "react-app",
+  "rules": { "react/no-direct-mutation-state": 0 }
+}
