@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled, { ThemeProvider, createGlobalStyle } from 'styled-components';
 import Header from '../components/Header';
 import Meta from './Meta';
@@ -18,7 +18,7 @@ const StyledPage = styled.div`
   color: ${props => props.theme.black};
 `;
 
-const Inner = styled.div`
+const Main = styled.main`
   max-width: ${props => props.theme.maxWidth};
   margin: 0 auto;
   padding: 2rem;
@@ -60,7 +60,7 @@ const Page = props => {
         <GlobalStyles />
         <Meta />
         <Header />
-        <Inner>{props.children}</Inner>
+        <Main>{props.children}</Main>
       </StyledPage>
     </ThemeProvider>
   );
